@@ -7,7 +7,7 @@
 import java.io.*;
 import java.util.*;
 
-public class  Ideone {
+public class  Positiveno {
 
     
     public static void main(String[] args) {
