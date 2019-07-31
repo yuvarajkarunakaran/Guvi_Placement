@@ -4,7 +4,14 @@ import java.util.List;
 
 public class RemoveRepeatedElementInArray {
     public static void main(String args[]) {
-        List <Integer> numbers = Arrays.asList(1,2,3,2,3,4,3);
+       // List <Integer> numbers = Arrays.asList(1,2,3,2,3,4,3);
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] numbers=new int[n];
+        for(int i=0;i<n;i++)
+        {
+               numbers[i]=sc.nextInt();
+        }
         int arr[] = new int[10];
        // int temp[] = new int[10];
         for(int c: numbers) {
