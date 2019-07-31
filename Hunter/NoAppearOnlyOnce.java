@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class NoAppearOnlyOnce {
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int tem[]=new int[100];
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        for(int x:arr)
+        {
+            tem[x]++;
+        }
+        for(int i=0;i<tem.length;i++)
+        {
+            if(tem[i]==1)
+            {
+                System.out.print(i+ " ");
+            }
+        }
+    }
+}
+
+
