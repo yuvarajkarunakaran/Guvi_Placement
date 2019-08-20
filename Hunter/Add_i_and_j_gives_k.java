@@ -6,14 +6,17 @@ public class Add_i_and_j_gives_k {
         {
             for(int j=i+1;j<a.length;j++)
             {
-                int c=a[i]+a[j];
-                for(int k=0;k<a.length;k++)
-                {
-                    if(a[k]==c)
-                    {
-                        System.out.println(a[i]+ " " +a[j]+ " " +c );
+                int c=0;
+
+                    c = a[i] + a[j];
+                    for (int k = 0; k < a.length; k++) {
+                        if((k>i) && (k>j) &&(j>i)) {
+                            if (a[k] == c) {
+                                System.out.println(a[i] + " " + a[j] + " " + c);
+                            }
+                        }
                     }
-                }
+
             }
         }
     }
